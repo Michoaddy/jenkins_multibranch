@@ -2,9 +2,9 @@ node('built-in')
 {
     stage('Continuous Download_Master') 
 	{
-    git 'https://github.com/sunildevops77/maven.git'
+    git 'https://github.com/Michoaddy/jenkins_multibranch.git'
 	}
-    stage('Continuous Build_Master') 
+    stage('Continuous Build_Master')
 	{
     sh label: '', script: 'mvn package'
 	}
